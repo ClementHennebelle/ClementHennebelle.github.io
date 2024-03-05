@@ -4,14 +4,18 @@ header {
 }
 
 h1 { 
-    color : red;
-    font-size: 2.5em;
-    border: brown 2px solid;
-    padding: 10px;
+    color : white;
+    font-size: 3rem;
+    text-align: center;
+    background-color: rgba(14, 14, 78, 0.699);
+    padding: 5px 10px 5px 10px;
+    border: 2px black solid;
 }
-
+.titreMetier{
+    font-size: 2.5rem;
+}
 body {
-    background: lightblue;
+    background: lightslategrey;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,39 +25,106 @@ main {
 
 .blockcentral {
     width: 100%;
-    margin: 10px;
+    margin: 2%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.partiegauche {
-    width: 30%;
-    height: 100%;
-    padding-top: 20%;
+.partiegauche{
+    width: 20%;
+    
+}
+.miniPartieGauche {
     background-color: rgb(218, 205, 205);
+    border: 2px solid black;
+    
 }
 
 .partiedroite {
-    width: 68%;
+    width: 75%;
     height: 100%;
-    margin-left: 2%;
+    margin-left: 30px;
+    padding-right: 10px;
+    padding-top: 30px;
     display: flex;
+    background-color: rgb(218, 205, 205);
+    border: 2px solid black;
     flex-direction: column;
+    align-content: center;
 }
 
+.minilogo {
+    width: 40px;
+    justify-content: center;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+.photoprofil{
+    width: 100%;
+    height: 25%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
 h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bolder;
-    font-style: italic;
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.3rem;
+    text-align: center;
 }
 
 h4 {
-    padding-left: 10px;
-    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+
 }
 
-li {
-    padding-top: 3px;
+.lileft {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    list-style-type: none;
+}
+
+ul.lileft {
+    padding-left: 0px;
+    list-style-type: none;
+    text-align: start;
+   
+}
+
+
+.titre{
+    font-weight: 700;
+    list-style-type: none;
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+}
+.titreUnderline{
+    background-color: rgba(14, 14, 78, 0.699);
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border: 2px black solid;
+}
+.xp {
+    padding-bottom: 20px;
+    list-style-type: none;
+}
+
+.date{
+    font-style: italic;
+}
+
+.firm{
+    font-size: 1.1rem;
+    font-weight: 600;
 }

@@ -1,128 +1,158 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+	<head>
+		<title>Miniport by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-<head>
-	<meta charset="utf-8">
-	<title>Le CV de Clément Hennebelle</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">À propos de moi</a></li>
+					<li><a href="#work">Compétences techniques</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
 
+		<!-- Home -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="images/myAvatar.svg" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1>Bonjour ! Je suis <strong>Clément Hennebelle</strong>.</h1>
+							</header>
+							<p>j'ai 30 ans et je suis développeur web fullstack avec une orientation marquée vers le backend. Passionné par les technologies web, je m'efforce de créer des solutions robustes et performantes. Explorez mon portfolio pour découvrir mes projets et n'hésitez pas à me contacter pour toute collaboration ou discussion autour du développement web.</p>
+							<a href="#work" class="button large scrolly">En savoir plus sur moi</a>
+						</div>
+					</div>
+				</div>
+			</article>
 
-<body>
-       <header><h1>Clément Hennebelle<br>
-       <span class="titreMetier">Développeur web full stack PHP</span></h1></header>
-<main>        
-    <section class="blockcentral">
-        <section class="partiegauche">
-        <img class="photoprofil" src="./images/testlkdin.png" alt="testlkdin">
-            <section class="miniPartieGauche">
-                <h3><span class="titreUnderline">À propos de moi</span></h3>
-                    <section class="contact">
-                        <h4>Contact</h4>
-                            <ul class="lileft">
-                                <li><img class="minilogo" src="./images/phoneicon.png" alt="phone"></li>
-                                <li>07.71.00.67.03</li>
-                                <li><a href="https://fr.linkedin.com/in/clement-hennebelle-4b15581aa" target="_blank"><img class="minilogo" src="./images/linkedin.png" alt="linkedin" ></a></li>
-                                <li><a href="mailto:clement.hennebelle@gmail.com"><img class="minilogo" src="./images/iconmail.png" alt="mailto"></a></li>
-                            </ul>
-            
-            </section>
-            <section class="skills">
-                <h4>Hard Skills</h4>
-                <ul class="lileft">
-                    <ul>Intégration Web
-                        <li>HTML5, CSS3</li></ul>
-                        <ul>Développement FrontEnd <br>
-                        <li>Javascript</li></ul>
-                        <ul>Développement BackEnd
-                        <li>PHP (Orienté Objet)</li></ul>
-                
-                </ul>
-            </section>
-            <section class="langages">
-                <h4>Langues</h4>
-                <ul class="lileft">
-                    <li>Anglais : niveau B2</li>
-                    <li>Espagnol : niveau A2</li>
-                </ul>
-            </section>
-            <section class="hobbies">
-                <h4>Centres d'interet</h4>
-                <ul class="lileft">
-                    <li>Football</li>
-                    <li>Multimédia</li>
-                    <li>Web 3.0</li>
-                    <li>Voyages</li>
-                    <li>Cuisine</li>
-                </ul>
-        </section>
-    </section>
-     </section>
+		<!-- Skills -->
+			<article id="work" class="wrapper style2">
+				<div class="container">
+					<header>
+						<h2>Compétences techniques</h2>
+						<p>Voici un aperçu des langages et frameworks que j'utilise.</p>
+					</header>
+					<div class="row aln-center">
+						<div class="col-6 col-6-medium col-12-small">
+							<section class="box style1">
+								<span class="icon featured">
+									<i class="fab fa-php"></i>
+									<i class="fab fa-laravel"></i>
+									<i class="fab fa-symfony"></i>
+								</span>
+								<h3>Backend</h3>
+								<p>PHP, Laravel, Symfony</p>
+							</section>
+						</div>
+						<div class="col-6 col-6-medium col-12-small">
+							<section class="box style1">
+								<span class="icon featured">
+									<i class="fab fa-html5"></i>
+									<i class="fab fa-css3"></i>
+									<i class="fab fa-js"></i>
+								</span>
+								<h3>Frontend</h3>
+								<p>HTML 5, CSS 3, JavaScript</p>
+							</section>
+						</div>
+						
+					</div>
+					<footer>
+						<p>Envie de découvrir quelques unes de mes créations ?</p>
+						<a href="#portfolio" class="button large scrolly">Voir mes dernières réalisations</a>
+					</footer>
+				</div>
+			</article>
 
-    <section class="partiedroite">
+		<!-- Portfolio -->
+			<article id="portfolio" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>Projets réalisés</h2>
+						<p>Voici un aperçu d'une partie de mes projets : une sélection de mes trois meilleures réalisations. Explorez ces exemples pour avoir un aperçu de mon travail et découvrir comment je concrétise mes idées avec créativité et professionnalisme.</p>
+					</header>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<h3><a href="#">Projet n°1</a></h3>
+								<p>Création d'un Back Office avec PHP et Laravel pour une entreprise de vente de chassures. Système d'authentification et mise en place des droits en fonction du rôle de l'utilisateur.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+								<h3><a href="#">Projet n°2</a></h3>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, quisquam. Inventore, reiciendis. Voluptates tenetur ipsa reprehenderit. Fugit et corporis harum optio quos eum!</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+								<h3><a href="#">Projet n°3</a></h3>
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quae ducimus vero impedit animi fugit. Cumque optio dignissimos a impedit tempore ut deleniti cum nam!</p>
+							</article>
+						</div>
+					</div>
+					<footer>
+						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+						<a href="#contact" class="button large scrolly">Prenez contact avec moi</a>
+					</footer>
+				</div>
+			</article>
 
-        <h2><span class="titreUnderline">Expériences Professionelles</span></h2>
-        <ul>
-            <li class="titre">Opérateur Façonnage / Massicotier</li>
-                <ul class="xp">
-                    <li><span class="firm">S.D.P.S</span>, Saint-Denis sur Sathon (Orne)</li>
-                    <li class="date">2017 - Aujourd'hui</li>
-                    <li>Préparation et découpe des matières en fonction du cahier des charges du client</li>
-                </ul>
-            
-        
-            <li class="titre">Commercial</li>
-                <ul class="xp">
-                    <li><span class="firm">PH Energies</span>, Fleury-sur-Orne (Calvados)</li>
-                    <li class="date">Février 2017 - Mai 2017</li>
-                </ul>
-            
+		<!-- Contact -->
+			<article id="contact" class="wrapper style4">
+				<div class="container medium">
+					<header>
+						<h2>Vous souhaitez me confier des tâches ?</h2>
+							<p>
+								<i class="far fa-envelope"></i>
+							<br>
+							<a href="mailto:clement.hennebelle@gmail.com"></i>clement.hennebelle@gmail.com</a>
+							</p>
+							<br>
+							<p>
+								<i class="fas fa-phone-alt"></i>
+								<br>
+								<a href="tel:+33771006703">07 71 00 67 03</a>
+							</p>
+					</header>
+					<div class="row">
+						<div class="col-12">
+							<h3>Retrouvez moi sur ...</h3>
+							<ul class="social">
+								<li><a href="https://fr.linkedin.com/in/clement-hennebelle-4b15581aa" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/ClementHennebelle" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+								</ul>
+						</div>
+						
+					<footer>
+						<ul id="copyright">
+							<li>&copy; Clément Hennebelle</li>
+						</ul>
+					</footer>
+				</div>
+			</article>
 
-            <li class="titre">Commercial Stagiaire</li>
-                <ul class="xp">
-                    <li><span class="firm">S.A.S Esprit Sport / Macron Store</span>, Le Mans (Sarthe)</li>
-                    <li class="date">Février 2015 - Mai 2016</li>
-                    <li>Chargé du développement du secteur Orne auprès des clubs sportifs et associations. <br>
-                        Mise en place des réseaux sociaux pour assurer le marketing numérique de l'entreprise.</li>
-                </ul>
-            
-        </ul>
-        <h2><span class="titreUnderline">Formation</span></h2>
-        <ul>
-            <li class="titre">Formation de Développeur web Full Stack PHP </li>
-                <ul class="xp">
-                    <li><span class="firm">École O'Clock</span> Format en Téléprésentiel <br>
-                    Préparation du titre professionnel de niveau V (Bac+2 Développeur web et web mobile)</li>
-                    <li class="date">Janvier 2024 - Aujourd'hui</li>
-                    <li>798 heures intensives</li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                    
-            <li class="titre">Brevet de Technicien Supérieur : Négociations et Relations Clientèle </li>
-                <ul class="xp">
-                    <li><span class="firm">Lycée Marguerite de Navarre</span>, Alençon (Orne)</li>
-                    <li class="date">2014-2016</li>
-                </ul>
-            
-            <li class="titre">Baccalauréat Technologique : Sciences et Technologies de la Gestion</li>
-                <ul class="xp">
-                    <li>Spécialité Gestion des Systèmes d'Informations</li>
-                    <li><span class="firm">Lycée Marguerite de Navarre</span>, Alençon (Orne)</li>
-                    <li class="date">2009-2012</li>
-                </ul>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-            
-        </ul>
-    </section>
-</section>
-
-
-
-   
-</main>
-
-
-</div>
-</body>
+	</body>
 </html>

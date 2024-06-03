@@ -1,22 +1,39 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Miniport by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Clément Hennebelle</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-preload">
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">À propos de moi</a></li>
-					<li><a href="#work">Compétences techniques</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+    <!-- Nav -->
+    <nav id="nav" class="desktop-nav">
+        <ul>
+            <li><a href="#top">À propos de moi</a></li>
+            <li><a href="#work">Compétences techniques</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav id="mobile-nav" class="mobile-nav">
+        <div class="mobile-nav-container">
+            <div class="toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul>
+                <li><a href="#top">À propos de moi</a></li>
+                <li><a href="#work">Compétences techniques</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+		
 
 		<!-- Home -->
 			<article id="top" class="wrapper style1">
@@ -106,7 +123,7 @@
 						</div>
 					</div>
 					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+						<p>Envie de discuter de votre prochain projet ?</p>
 						<a href="#contact" class="button large scrolly">Prenez contact avec moi</a>
 					</footer>
 				</div>
@@ -153,6 +170,16 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					var toggle = document.querySelector('.mobile-nav .toggle');
+					var menu = document.querySelector('#mobile-nav ul');
+		
+					toggle.addEventListener('click', function() {
+						menu.classList.toggle('show');
+					});
+				});
+			</script>
 
 	</body>
 </html>

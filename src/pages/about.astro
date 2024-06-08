@@ -1,0 +1,178 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Icon as AstroIcon } from 'astro-icon/components';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="A propos | Clément Hennebelle" description="A propos Clément Hennebelle">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="À propos de moi"
+				tagline="Merci de passer par ici ! Continuez à lire ci-dessous pour découvrir qui je suis et en apprendre davantage sur mon parcours."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/handslaptop.jpg"
+					alt="Hands on work"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Mon Parcours</h2>
+				<div class="content">
+					<p>
+						Je m'appelle Clément Hennebelle et mon parcours est marqué par une constante recherche de nouvelles opportunités et de nouveaux défis. J'ai commencé mes études par un baccalauréat STG en Gestion des Systèmes d'Information, où j'ai acquis des compétences solides en gestion et en informatique.
+					</p>
+					<br>
+					<p>
+						Cherchant à diversifier mes compétences, j'ai ensuite entrepris un BTS NRC (Négociation et Relation Client). Cette expérience m'a permis de développer mes aptitudes en communication et en gestion de la relation client, tout en me donnant une vision large du monde professionnel. Cependant, ma véritable passion a toujours été le développement et l'informatique. C'est pourquoi j'ai récemment décidé de me reconvertir professionnellement en suivant une formation en développement web et applications web.
+					</p>
+					<br>
+					<p>
+						Je suis enthousiaste à l'idée de mettre en pratique mes compétences techniques et ma créativité pour développer des solutions web efficaces et intuitives. Mon objectif est de continuer à apprendre et à évoluer dans ce domaine en constante évolution.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title"><AstroIcon name="mdi:account-school" color="var(--accent-regular)" size={40} /><br> Formation </h2>
+				<div class="content">
+					<p><br>
+						<ul>
+							<li>
+								<i class="fa-solid fa-school"></i>
+								Baccalauréat STG (Gestion des Systèmes d'Information)
+								<br>Lycée Marguerite de Navarre, Alençon, 2009-2012
+							</li>
+							<li>
+								<i class="fa-solid fa-school"></i>BTS NRC (Négociation et Relation Client)
+								<br>Lycée Marguerite de Navarre, Alençon, 2014-2016
+							</li>
+							<li>
+								<i class="fa-solid fa-house-laptop"></i>
+								Formation Développeur Web / Applications Web (6 mois)
+								<br>O'Clock, 2024
+							</li>
+						</ul>
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title"><AstroIcon name="mdi:toolbox" color="var(--accent-regular)" size={40} />Compétences</h2>
+				<div class="content">
+					<div class="skills-category"><br>
+						<h2 class="section-title">Compétences techniques</h2>
+						<br>
+						<ul class="skills-list">
+							<li>
+								<i class="fa-brands fa-php"></i>PHP
+							</li>
+							<li>
+								<i class="fa-brands fa-symfony"></i>Symfony
+							</li>
+							<li>
+								<i class="fa-brands fa-laravel"></i>Laravel
+							</li>
+							<li>
+								<i class="fab fa-js"></i>JavaScript
+							</li>
+							<li>
+								<i class="fab fa-css3-alt"></i>CSS
+							</li>
+						</ul>
+					</div>
+				<br>
+					<div class="skills-category">
+						<h2 class="section-title">Compétences non techniques</h2>
+						<br>
+						<ul class="skills-list">
+							<li>
+								<i class="fas fa-project-diagram"></i>Gestion de projet
+							</li>
+							<li>
+								<i class="fas fa-users"></i>Communication interpersonnelle
+							</li>
+							<li>
+								 <i class="fas fa-lightbulb"></i> Résolution de problèmes
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<style>
+				ul {
+					list-style-type: none;
+				}
+				li {
+					margin-bottom: 10px;
+				}
+				i {
+					margin-right: 15px;
+				}
+			</style>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>

@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clément Hennebelle</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+                    <a href="#" class="logo">Clément HENNEBELLE</a>
+                        <div class="nav-links">
+                            <ul>
+                        <li><a href="#about">Qui suis-je ?</a></li>
+                        <li><a href="#skills">Compétences Techniques</a></li>
+                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <img src="menu-btn.png" alt="menu burger" class="menu-burger">
+                </nav>
+    </header>
+
+    <section class="about" id="about">
+        <img src="myAvatar.svg" alt="photo" class="profilpicture">
+        <p>
+            Je m'appelle Clément HENNEBELLE et je suis développeur web spécialisé dans le développement backend. Depuis toujours, j'ai été fasciné par le monde numérique et les possibilités infinies qu'il offre. Cette passion m'a conduit à me spécialiser dans le développement web, où je peux donner vie à des idées créatives à travers des projets dynamiques et interactifs.
+        </p>
+        <p>
+            Ma mission est de créer des expériences utilisateur exceptionnelles en combinant une solide maîtrise des technologies backend modernes avec un sens aigu de la performance et de la sécurité. Je suis particulièrement expérimenté avec PHP et ses frameworks puissants tels que Laravel et Symfony, qui me permettent de construire des applications robustes et scalables.<br>
+            Bien que mon expertise principale soit orientée backend, je possède également des compétences en développement frontend, notamment en JavaScript, ce qui me permet de travailler efficacement sur des projets full-stack lorsque nécessaire.
+        </p>
+        <p>
+            Sur ce portfolio, vous trouverez une sélection de mes travaux, démontrant mon expertise en backend ainsi que quelques réalisations frontend. J'y partage également mes réflexions sur les dernières tendances technologiques et mes contributions à divers projets open-source.
+
+N'hésitez pas à explorer mes réalisations et à me contacter pour toute collaboration ou projet futur. Je suis toujours à la recherche de nouveaux défis et opportunités pour innover et créer des expériences web uniques.
+
+Bonne visite !
+        </p>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>Compétences Techniques</h2>
+            <h3>BackEnd</h3>
+            <div class="backend">
+                <div class="iconelogo">
+                    <img src="icone-php.png" alt="PHP" class="iconeskills">
+                    <p>PHP</p>
+                </div>
+                <div class="iconelogo">
+                    <img src="icone-symfony.png" alt="Symfony" class="iconeskills">
+                    <p>Symfony</p>
+                </div>
+                <div class="iconelogo">
+                    <img src="icone-laravel.png" alt="Laravel" class="iconeskills">
+                    <p>Laravel</p>
+                </div>
+                <div class="iconelogo">
+                    <img src="icone-sql.png" alt="SQL" class="iconeskills">
+                    <p>SQL</p>
+                </div>
+            </div>
+            <h3>FrontEnd</h3>
+            <div class="frontend">
+                <div class="iconelogo">
+                    <img src="icone-html.png" alt="HTML" class="iconeskills">
+                    <p>HTML</p>
+                </div>
+                <div class="iconelogo">
+                    <img src="icone-css.png" alt="CSS" class="iconeskills">
+                    <p>CSS</p>
+                </div>
+                <div class="iconelogo">
+                    <img src="icone-bootstrap.png" alt="Bootstrap" class="iconeskills">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="iconelogo">
+                    <img src="icone-js.png" alt="JavaScript" class="iconeskills">
+                    <p>JavaScript</p>
+                </div>
+            </div>
+    </section>
+    
+    <section class="projects" id="projects">
+        <h2>Projets réalisés</h2>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Me contacter</h2>
+    </section>
+
+</body>
+    <script>
+        const menuBurger = document.querySelector(".menu-burger")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuBurger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>
